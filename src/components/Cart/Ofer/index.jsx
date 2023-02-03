@@ -38,7 +38,7 @@ const Ofer = ({ setCartStatus, setOferStatus }) => {
 
   const { t, i18n } = useTranslation();
 
-  const { cartProductsIdsQty } = useSelector((state) => state.cart2);
+  const { cartProductsIdsQty } = useSelector((state) => state.cart);
 
   const [contactInfo, setContactInfo] = React.useState({
     name: '',

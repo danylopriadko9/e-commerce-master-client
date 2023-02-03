@@ -74,7 +74,19 @@ const ProductCard = ({ item, center }) => {
           <ProductSlideIcon
             onClick={(e) => {
               e.stopPropagation();
-              dispatch(addItemToCart(product_id));
+              dispatch(
+                addItemToCart({
+                  product_name,
+                  category_name,
+                  url,
+                  base_price,
+                  discount_percent,
+                  filename,
+                  product_id,
+                  iso,
+                  category_id,
+                })
+              );
             }}
           >
             <RiShoppingCart2Fill />

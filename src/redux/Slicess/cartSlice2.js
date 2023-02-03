@@ -39,10 +39,11 @@ const initialState = {
 };
 
 export const cartSlice2 = createSlice({
-  name: 'cart2',
+  name: 'cart',
   initialState,
   reducers: {
     addItemToCart: (state, action) => {
+      console.log(action.payload);
       if (
         state.cartProductsIdsQty.find(
           (el) => el.product_id === action.payload.product_id
@@ -68,7 +69,7 @@ export const cartSlice2 = createSlice({
           { product_id: action.payload.product_id, qty: 1 },
         ];
       }
-
+      console.log(state.cartProducts);
       state.totalPrice = calcTotalPrice(state.cartProducts, state.currency);
     },
 

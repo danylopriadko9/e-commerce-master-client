@@ -180,10 +180,10 @@ const CategoryPage = () => {
     ).parent_id === 0 &&
     categories[language].find(
       (el) =>
-        el.parent_name ===
+        el.parent_id ===
         categories[language].find(
           (el) => el.url === location.pathname.replace('/group_', '')
-        ).parent_id
+        ).category_id
     )
   ) {
     const category = categories[language].find(

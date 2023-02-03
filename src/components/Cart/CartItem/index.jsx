@@ -39,7 +39,7 @@ const CartItem = ({
 }) => {
   const dispatch = useDispatch();
   const [itemQty, setItemQty] = React.useState(1);
-  const { cartProductsIdsQty } = useSelector((state) => state.cart2);
+  const { cartProductsIdsQty } = useSelector((state) => state.cart);
 
   React.useEffect(() => {
     if (itemQty === 0) {

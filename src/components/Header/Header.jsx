@@ -55,7 +55,7 @@ const Header = ({ setCartStatus, setLanguageStatus }) => {
   const { currentUser, logout } = React.useContext(AuthContext);
 
   const { cartProductsIdsQty, totalPrice } = useSelector(
-    (state) => state.cart2
+    (state) => state.cart
   );
 
   React.useEffect(() => {

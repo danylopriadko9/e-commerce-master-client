@@ -28,7 +28,7 @@ import { useTranslation } from 'react-i18next';
 
 const Cart = ({ cartStatus, setCartStatus }) => {
   const { cartProducts, cartProductsIdsQty, totalPrice } = useSelector(
-    (state) => state.cart2
+    (state) => state.cart
   );
   const { t, i18n } = useTranslation();
   const [oferStatus, setOferStatus] = React.useState(false);

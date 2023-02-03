@@ -11,7 +11,7 @@ import { NavMenu } from './navMenu';
 import { AuthContext } from '../../../context/authContext';
 import styles from './styles.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { setLanguage } from '../../../redux/slices/languageSlice';
+import { setLanguage } from '../../../redux/Slicess/languageSlice';
 
 export function HamburgerMenu(props) {
   const { t, i18n } = useTranslation();

@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next';
 
 const SearchPage = () => {
   const queryParameters = new URLSearchParams(window.location.search);
-  const { products, numberOfPages } = useSelector((state) => state.search2);
+  const { products, numberOfPages } = useSelector((state) => state.search);
   const { language } = useSelector((state) => state.language);
   const dispatch = useDispatch();
   const navigate = useNavigate();
