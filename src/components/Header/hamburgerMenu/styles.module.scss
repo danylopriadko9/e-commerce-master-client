@@ -1,0 +1,16 @@
+.languageContainer {
+  display: flex;
+  gap: 5px;
+
+  .languageItem {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    &.active {
+      border: 1px solid white;
+      background-color: rgba(0, 0, 255, 0.431);
+      color: white;
+    }
+  }
+}

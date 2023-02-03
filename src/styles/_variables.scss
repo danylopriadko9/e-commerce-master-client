@@ -1,0 +1,42 @@
+$container-width: 960px;
+$full-screen: 100%;
+$products-in-row: 4;
+
+$font-size-small: 13px;
+$font-size-medium: 16px;
+$font-size-large: 20px;
+$font-size-extra-large: 24px;
+
+$font-size-h1: 32px;
+$font-size-h2: 24px;
+$font-size-h3: 20px;
+$font-size-h4: 16px;
+$font-size-h5: 14px;
+$font-size-h6: 12px;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+:export {
+  container-width: $container-width;
+  products-in-row: $products-in-row;
+
+  font-size-h1: $font-size-h1;
+  font-size-h2: $font-size-h2;
+  font-size-h3: $font-size-h3;
+  font-size-h4: $font-size-h4;
+  font-size-h5: $font-size-h5;
+  font-size-h6: $font-size-h6;
+
+  font-size-small: $font-size-small;
+  font-size-medium: $font-size-medium;
+  font-size-large: $font-size-large;
+  font-size-extra-large: $font-size-extra-large;
+
+  breakpoint-sm: $breakpoint-sm;
+  breakpoint-md: $breakpoint-md;
+  breakpoint-lg: $breakpoint-lg;
+  breakpoint-xl: $breakpoint-xl;
+}
